@@ -11,9 +11,6 @@
       "resizeMode": "contain",
       "backgroundColor": "#FFFFFF"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "web": {
       "favicon": "./assets/logo_azul.png"
     }
