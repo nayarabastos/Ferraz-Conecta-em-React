@@ -1,27 +1,79 @@
-# Ferraz Conecta - Expo Snack
+# Ferraz Conecta
 
-Projeto React Native/Expo preparado para importação no Expo Snack.
+Aplicativo mobile/web em React Native com Expo para conectar moradores de Ferraz de Vasconcelos a vagas de emprego, cursos, eventos locais, notificações e acompanhamento de candidaturas.
+
+O projeto foi construido a partir de um protótipo visual e organizado em telas separadas, componentes reutilizaveis, assets locais e dados mockados para demonstração.
 
 ## Como abrir
 
-1. Instale as dependências:
+Acesse: https://snack.expo.dev/@nayarabp/ferrazconecta
+
+ou
+
+## Requisitos
+
+- Node.js instalado
+- npm instalado
+- Expo CLI via `npx`
+
+## Como rodar
+
+Instale as dependências:
 
 ```bash
 npm install
 ```
 
-2. Rode no Expo:
+Inicie o projeto:
 
 ```bash
 npm start
 ```
 
-3. Para importar no Expo Snack, envie o repositório mantendo esta estrutura na raiz:
+Para abrir direto no navegador:
 
-- `App.js`
-- `app.json`
-- `package.json`
-- `assets/`
-- `src/`
+```bash
+npm run web
+```
 
-As telas estão separadas em `src/screens`, e os assets usados pelo app estão em `assets/`.
+Para abrir no Android ou iOS:
+
+```bash
+npm run android
+npm run ios
+```
+
+No Expo, você também pode escanear o QR Code exibido no terminal usando o app Expo Go.
+
+## Estrutura do projeto
+
+```text
+.
+├── App.js
+├── app.json
+├── package.json
+├── assets/
+│   ├── logo.png
+│   ├── logo_azul.png
+│   ├── logo_titulo.png
+│   ├── brand-mark-navy.png
+│   └── prototype/
+├── src/
+│   ├── components/
+│   ├── constants/
+│   ├── data/
+│   └── screens/
+├── figma-export/
+├── snack-ready/
+└── dist/
+```
+## Observações
+
+- O app usa navegação por estado interno em `App.js`, sem React Navigation.
+- As informações exibidas sao mockadas e ficam em `src/data/mockData.js`.
+- Os filtros de vagas e cursos funcionam localmente sobre os dados mockados.
+- Algumas ações exibem feedback visual ou simulam comportamento real, como salvar vaga, atualizar perfil e participar de evento.
+
+## Status
+
+Projeto em fase de protótipo funcional, pronto para demonstração visual, navegação entre telas e evolução para integração com backend.
